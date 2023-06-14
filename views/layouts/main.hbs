@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../{{href}}/style.css">
+    <link rel="stylesheet" href="../Global/normailize.css">
+    <link rel="stylesheet" href="../Global/header.css">
+    <link rel="stylesheet" href="../Global/footer.css">
+    <title>{{title}}</title>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=1eedc493-a074-419e-ac22-873c1ce4ad5b&lang=ru_RU"
+        type="text/javascript"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container header__container">
+            {{> header/logo}}
+            {{> header/nav}}
+            {{> header/registration}}
+        </div>
+
+    </header>
+    <main>
+        {{{body}}}
+    </main>
+    <footer>
+        <div class="container footer__container">
+            {{> footer/logo}}
+            {{> footer/contact}}
+            {{> footer/map}}
+        </div>
+
+    </footer>
+    <script>
+        ymaps.ready(init);
+        function init() {
+            const myMap = new ymaps.Map("map", {
+                center: [60.037560, 30.227326],
+                zoom: 17
+            });
+            const myGeoObject = new ymaps.GeoObject({
+                geometry: {
+                    type: "Point", // тип геометрии - точка
+                    coordinates: [60.037560, 30.227326] // координаты точки
+                }
+            });
+
+            // Размещение геообъекта на карте.
+            myMap.geoObjects.add(myGeoObject);
+        }
+    </script>
+</body>
+
+</html>

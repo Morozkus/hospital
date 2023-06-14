@@ -1,0 +1,17 @@
+INSERT INTO price (name, cost, department) VALUES ('Детская профессиональная гигиена полости рта', 2500,'Prevention');
+INSERT INTO price (name, cost, department) VALUES ('Профессиональная гигиена полости рта ( Акция )', 3900,'Prevention');
+INSERT INTO price (name, cost, department) VALUES ('Удаление зуба', 2800,'Surgery');
+INSERT INTO price (name, cost, department) VALUES ('Удаление зуба мудрости', 4900,'Surgery');
+INSERT INTO price (name, cost, department) VALUES ('Синус лифтинг', 15000,'Surgery');
+INSERT INTO price (name, cost, department) VALUES ('Коронка на имплант', 22000,'Surgery');
+INSERT INTO price (name, cost, department) VALUES ('Имплант с установкой', 29000,'Surgery');
+INSERT INTO price (name, cost, department) VALUES ('Коронка', 15000,'Orthopedics');
+INSERT INTO price (name, cost, department) VALUES ('Пластинчатое съемное протезирование', 28000,'Orthopedics');
+INSERT INTO price (name, cost, department) VALUES ('Бюгельное съемное протезирование', 35000,'Orthopedics');
+INSERT INTO price (name, cost, department) VALUES ('Гибкое съемное протезирование', 36000,'Orthopedics');
+INSERT INTO price (name, cost, department) VALUES ('Винир', 23000,'Orthopedics');
+INSERT INTO price (name, cost, department) VALUES ('RG - снимок', 490,'Therapy');
+INSERT INTO price (name, cost, department) VALUES ('Кариес', 2800,'Therapy');
+INSERT INTO price (name, cost, department) VALUES ('Эстетическая реставрация', 5500,'Therapy');
+INSERT INTO price (name, cost, department) VALUES ('Пульпит', 8000,'Therapy');
+INSERT INTO price (name, cost, department) VALUES ('Периодонтит', 12000,'Therapy');

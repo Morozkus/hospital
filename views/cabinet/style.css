@@ -1,0 +1,146 @@
+.cabinet {
+    font-size: 2.2rem;
+}
+
+.cabinet__container {
+    flex-direction: column;
+}
+
+.cabinet__function-list {
+    margin: 0 auto;
+
+    width: 75%;
+    display: flex;
+
+    justify-content: space-between;
+}
+
+.cabinet__function-item {
+    font-weight: bold;
+    border: 1px dashed black;
+
+    padding: 5px 15px;
+
+    cursor: pointer;
+}
+
+.cabinet__function-item:active {
+    transform: scale(0.9)
+}
+
+.work-space {
+    width: 100%;
+}
+
+.list {
+    width: 100%;
+
+    text-align: center;
+}
+
+td, th {
+    border-bottom: 1px solid black;
+}
+
+:root {
+    --top-position: 0;
+}
+
+body:has(.popap) {
+    overflow: hidden;
+    padding-right: 17px;
+}
+
+.popap {
+    display: flex;
+
+    position: absolute;
+    top: var(--top-position, 0);
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+.popap__container {
+    padding: 50px;
+    width: 50%;
+
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+
+    height: auto;
+
+    background-color: lightgray;
+}
+
+.popap__list {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.popap__item {
+    width: 50%;
+}
+
+.popap__button {
+    padding: 5px 10px;
+    
+}
+
+.add-form {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.add-pacient__item {
+    padding: 10px;
+}
+
+.option {
+    padding: 10px;
+}
+
+.add-price__item {
+    padding: 10px;
+}
+
+.search-form {
+    margin-bottom: 20px;
+}
+
+.search-table {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.search-table tr {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.search-table tr td {
+
+    flex: 25% 1 1;
+    font-size: 1.2rem;
+}
+
+.search-table .td-id {
+    flex-basis: 10%;
+}

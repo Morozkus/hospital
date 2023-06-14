@@ -1,0 +1,8 @@
+.doctors__container {
+    flex-direction: column;
+    align-items: center;
+}
+
+.doctors__title_size {
+    font-size: 3.2rem;
+}

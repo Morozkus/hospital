@@ -1,0 +1,26 @@
+.galery__list {
+    width: 100%;
+    height: auto;
+}
+
+.galery__list_flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.galery__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 45%;
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+
+.galery__img {
+    width: 100%;
+    height: 100%;
+}

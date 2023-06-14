@@ -1,0 +1,7 @@
+@import url(./header_styles/nav.css);
+@import url(./header_styles/logo.css);
+
+.header__container {
+    justify-content: space-between;
+    align-items: center;
+}

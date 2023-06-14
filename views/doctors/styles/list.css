@@ -1,0 +1,25 @@
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.list__item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.list__img {
+    background-color: lightcoral;
+    width: 400px;
+    height: 400px;
+}
+
+.list__info {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}

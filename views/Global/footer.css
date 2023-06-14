@@ -1,0 +1,7 @@
+@import url(./footer_styles/contact.css);
+@import url(./footer_styles/logo.css);
+
+.footer__container {
+    justify-content: space-between;
+    align-items: center;
+}
