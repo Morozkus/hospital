@@ -26,7 +26,7 @@ app.use('/api', routerDB)
 app.use('/doctors/api', routerDoctor)
 app.use('/', router)
 app.use('/auth', routerauth)
-app.use('/list', rolesMiddleware('Admin'), routerList)
+app.use('/list',  routerList)
 
 app.use(function (req, res) {
     res.status(404).render("error", { title: 'Page not found', href: 'error'})
