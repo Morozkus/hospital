@@ -7,10 +7,6 @@ router.get('/', function (req, res) {
     const name = 'start'
     res.render(name, { title: 'Home page', href: name })
 });
-router.get('/database', (req, res) => {
-    const name = 'database'
-    res.render(name, { title: 'Database', href: name })
-})
 router.get('/doctors', (req, res) => {
     const name = 'doctors'
     res.render(name, { title: 'Doctors', href: name })
