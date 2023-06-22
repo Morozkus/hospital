@@ -19,6 +19,7 @@ btn.addEventListener('click', async (e) => {
         body: JSON.stringify(obj)
     })
     const result = await response.json()
-    
-    location.href = '../cabinet'
+    if (result) {
+        location.href = '../cabinet'
+    }
 })

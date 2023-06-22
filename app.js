@@ -6,6 +6,8 @@ import router from './routers/router.js'
 import routerauth from './routers/routerauth.js'
 import cookieParser from 'cookie-parser'
 import routerList from './routers/routerList.js';
+import rolesMiddleware from "./middlewaree/rolesMiddleware.js";
+
 const handlebars = expressHandlebars.create({
     defaultLayout: 'main',
     extname: 'hbs'
@@ -24,7 +26,7 @@ app.use('/api', routerDB)
 app.use('/doctors/api', routerDoctor)
 app.use('/', router)
 app.use('/auth', routerauth)
-app.use('/list', routerList)
+app.use('/list', rolesMiddleware('Admin'), routerList)
 
 app.use(function (req, res) {
     res.status(404).render("error", { title: 'Page not found', href: 'error'})

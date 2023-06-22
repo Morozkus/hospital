@@ -1,12 +1,31 @@
 <section class="login">
     <div class="container login__container">
-        <h1 class="login__title">Авторизуйтесь</h1>
+        
+        <form action="/auth/login" method="post" id="login__form"
+            class="registration-form registration-form_display_flex registration-form_border registration-form_padding registration-form_background">
 
-        <form action="/auth/login" method="post" id="login__form">
+            <label for="username" class="registration-form__label registration-form__label_display_flex">
 
-        <input type="text" name="username" max="16" min="3" id="username" value="admin">
-        <input type="text" name="password" max="16" min="3" id="password" value="qwerty">
-        <input type="submit" value="Отправить" id="submit">
+                <span class="dicription">Логин</span>
+
+                <input type="text"
+                    class="registration-form__input registration-form__input_border registration-form__input_padding login"
+                    name="username" max="16" min="3" id="username" value="admin">
+
+            </label>
+
+            <label for="password" class="registration-form__label registration-form__label_display_flex">
+
+                <span class="dicription">Пароль</span>
+
+                <input type="password"
+                    class="registration-form__input registration-form__input_border registration-form__input_padding password"
+                    name="password" max="16" min="3" id="password" value="qwerty">
+
+            </label>
+
+            <input type="submit" value="ВОЙТИ" id="submit"
+                class="enter registration-form__btn registration-form__btn_padding registration-form__btn_background registration-form__btn_border registration-form__btn_opacity">
 
         </form>
     </div>

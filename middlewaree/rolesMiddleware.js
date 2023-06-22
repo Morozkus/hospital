@@ -24,7 +24,7 @@ export default function (roles) {
             next();
         } catch (e) {
             console.log(e)
-            return res.json({message: 'Error'})
+            return res.redirect('/login')
         }
     }
 };

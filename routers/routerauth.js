@@ -5,6 +5,5 @@ const router = Router.Router()
 
 router.post('/registration', AuthController.registration)
 router.post('/login', AuthController.login)
-router.get('/users', roleMmiddleware('Admin'), AuthController.getUsers)
 
 export default router

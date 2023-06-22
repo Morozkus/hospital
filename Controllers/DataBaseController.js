@@ -1,9 +1,13 @@
 import db from '../db.js'
+import DataBaseService from '../Service/DataBaseService.js';
 
 class DataBaseController {
     async getAll (req, res) {
         try {
-            const priceList = await db.query("SELECT * FROM price WHERE department=$1 ORDER BY cost;", [req.query.department])
+            const department = req.query.department
+
+            const priceList = await DataBaseService.getAll(department)
+
             res.json(priceList.rows)
         } catch (error) {
             console.log(error);
