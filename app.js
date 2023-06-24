@@ -4,6 +4,7 @@ import express from 'express';
 import routerDoctor from './routers/routerDoctor.js';
 import router from './routers/router.js'
 import routerauth from './routers/routerauth.js'
+import routerCalendar from './routers/routerCalendar.js';
 import cookieParser from 'cookie-parser'
 import routerList from './routers/routerList.js';
 import rolesMiddleware from "./middlewaree/rolesMiddleware.js";
@@ -23,6 +24,7 @@ app.use(express.urlencoded({extended: true}))
 app.use(express.static('views'))
 
 app.use('/api', routerDB)
+app.use('/api', routerCalendar)
 app.use('/doctors/api', routerDoctor)
 app.use('/', router)
 app.use('/auth', routerauth)

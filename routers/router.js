@@ -12,7 +12,7 @@ router.get('/doctors', (req, res) => {
     res.render(name, { title: 'Doctors', href: name })
 })
 router.get('/schedule', (req, res) => {
-    const name = 'todo'
+    const name = 'calendar'
     res.render(name, { title: 'Schedule', href: name })
 })
 router.get('/price', (req, res) => {
